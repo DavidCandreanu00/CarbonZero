@@ -1,0 +1,241 @@
+.company_details {
+    display: inline-block;
+    text-align: left;
+}
+
+#details_left {
+    text-align: left;
+    max-width: 47%;
+}
+
+#details_right {
+    margin-top: 0;
+    vertical-align: top;
+    text-align: center;
+    overflow:scroll;
+    overflow-x: hidden;
+    max-height:23rem;
+}
+
+.make_orange {
+    color: #f6851b;
+    font-weight: bold;
+}
+
+.make_blue {
+    color: #5474f6;
+    font-weight: bold;
+}
+
+.company_div {
+    background-color: #2f3141;
+    padding: 2rem 4rem 2rem 4rem;
+    border-radius: 13px; 
+    max-width: 70rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    margin-bottom: 2.5rem;
+    margin-top: -0.2rem;
+}
+
+.make_light_gray {
+    color: #dcdce2;
+}
+
+.account_details {
+    background-color: #2f3141;
+    padding: 3rem 4rem 3rem 4rem;
+    border-radius: 13px; 
+    max-width: 40rem;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.sign_up_section {
+    background-color: #2f3141;
+    padding: 2rem 3rem 2.5rem 3rem;
+    border-radius: 13px; 
+    max-width: 40rem;
+    margin: 2rem auto;
+    text-align: left; 
+}
+
+.profile_input {
+    background-color: #1f1d2a;
+    border: none;
+    width: 35rem;
+    height: 1.7rem;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#description {
+    height:15rem;
+    padding-top: 1rem;
+    font-size: 85%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 180%;
+}
+
+.pending_title {
+    margin-top: 8rem;
+}
+
+.pending_company_div {
+    background-color: #2f3141;
+    padding: 2rem 3rem 3rem 3rem;
+    border-radius: 13px; 
+    max-width: 50rem;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.detail {
+    margin-bottom: 2.5rem;
+    margin-top: -0.5rem;
+}
+
+#company_name {
+    margin-bottom: 2.5rem;
+}
+
+.app_dec_btns {
+    display: flex;
+    max-width: 31rem;
+    margin:auto;
+
+}
+
+.admin-btns {
+    margin:auto;
+}
+
+.btn_cancel {
+    background-color: #f94449; 
+    border-radius: 5px; 
+    border: 1px solid #ff2c2c; 
+    color: white; 
+    font-size: 15px; 
+    padding: 10px 45px; 
+    cursor: pointer; 
+    font-weight: bold;
+    transition: 0.3s; 
+    margin-left: "auto";
+}
+
+.btn_cancel:hover { 
+    background-color: white; 
+    color: #1f1d2a; 
+    border-color: #1f1d2a; 
+    transition: 0.3s; 
+}
+
+.mint_details {
+    background-color: #2f3141;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 13px; 
+    max-width: 40rem;
+    margin: 3rem auto;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.input_field_mint {
+    background-color: #1f1d2a;
+    border: none;
+    width: 16rem;
+    height: 1.7rem;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title_mint {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.header_admin {
+    margin-top: 5rem;
+    font-size: 1.8rem;
+}
+
+.period_details {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+#end_period_title {
+    margin-top: 4rem;
+}
+
+#dashboard_title {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+.instruction_div {
+    text-align: left;
+    width: 50%;
+    max-width: 50rem;
+    margin: 10rem auto;
+}
+
+.heading_instructions {
+    margin-bottom: 3rem;
+}
+
+.subtitle {
+    margin-bottom: 1.5rem;
+    margin-top: 4.5rem;
+}
+
+.instruction_div p{
+    margin-left: 3rem;
+}
+
+#page_title {
+    margin-top: 5rem;
+}
+
+.link {
+    text-align: left;
+    text-decoration: none;
+    font-style: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    font-weight: bold;
+}
+  
+.link :hover {
+    color: #f6851b;
+    transition: 0.3s; 
+}
+
+.link_text {
+    color: white;
+}

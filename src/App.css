@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #1f1d2a;
+  color: white;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#con_acc {
+  color: #f6851b;
+  font-weight: bold;
+}

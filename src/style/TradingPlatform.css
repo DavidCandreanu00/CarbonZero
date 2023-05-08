@@ -1,0 +1,285 @@
+body {
+	font-family: "Roboto", sans-serif;
+  }
+
+#trading_platform_container {
+	background-color: #2f3141;
+	padding: 2rem 3rem;
+	border-radius: 13px; 
+	max-width: 80%;
+	margin: 1rem auto;
+	display: inline-block;
+}
+
+.open_trades {
+	background-color: #555867;
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 13px; 
+	max-width: 40rem;
+	margin: 2rem auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.transactions {
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 13px; 
+	max-width: 35rem;
+	margin: 3rem auto;
+	align-items: center;
+}
+
+.make_orange {
+	color: #f6851b;
+	font-weight: bold;
+}
+
+.make_blue {
+	color: #5474f6;
+	font-weight: bold;
+}
+
+.title_div {
+	max-width: 59rem;
+	margin: auto;
+}
+
+.order_div {
+	display: inline-block;
+}
+
+.page_title {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+.div_left {
+	text-align: left;
+}
+
+.input_field {
+	background-color: #1f1d2a;
+	border: none;
+	width: 13rem;
+	height: 1.7rem;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	text-align: center;
+}
+
+::placeholder {
+	color: white;
+}
+
+#transactions_header {
+	text-align: left;
+	margin-left: 3rem;
+	margin-bottom: 1rem;
+}
+
+.trading_platform_interface {
+	display: inline-block;
+}
+
+.order_interface {
+	display: inline-block;
+	margin:20px;
+	vertical-align: middle;
+}
+
+#buy_orders_list {
+   text-align: left; 
+
+}
+
+#sell_orders_list {
+	text-align: right; 
+ }
+
+.header {
+	font-size: 2.2rem;
+	text-align: center;
+  }
+  
+input {
+	padding: 10px 3px;
+	width: 230px;
+	display: block;
+	margin-bottom: 3rem;
+	margin: 1rem;
+  }
+  
+.btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+  }
+  
+.btn_cancel {
+	padding: 10px 20px; 
+	cursor: pointer; 
+	font-weight: bold;
+	transition: 0.3s; 
+	margin-left: "auto";
+	background-color: #f94449; 
+	border-radius: 5px; 
+	border: 1px solid #ff2c2c; 
+	color: white; 
+	font-size: 15px; 
+}
+
+.btn_cancel:hover { 
+	background-color: white; 
+	color: #1f1d2a; 
+	border-color: #1f1d2a; 
+	transition: 0.3s; 
+}
+
+.btn {
+	background-color: #5474f6; 
+	border-radius: 5px; 
+	border: 1px solid #5474f6; 
+	padding: 10px 45px; 
+	cursor: pointer; 
+	font-weight: bold;
+	transition: 0.3s; 
+	color: white; 
+	font-size: 15px; 
+}
+ 
+.btn:hover { 
+	border-color: #1f1d2a; 
+	transition: 0.3s; 
+	background-color: white; 
+	color: #1f1d2a; 
+}
+
+/* The toggle button styling was taken from w3schools: https://www.w3schools.com/howto/howto_css_switch.asp  */
+
+/* Slider styling */
+
+/* The switch - the box around the slider */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 59px;
+	height: 30px; 
+	margin-top: 3rem;
+	border-radius: 34px;
+}
+
+.avg_text {
+	margin-top: 1.92rem;
+	margin-bottom: 2rem;
+}
+
+
+.left-label {
+	position: absolute;
+	left: -8.3rem;
+	top: 0.4rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.right-label {
+	position: absolute;
+	right: -7.1rem;
+	top: 0.4rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 22px;
+	width: 24px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #f6851b;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+}
+
+.slider_inactive .left-label {
+	color: #f6851b;
+}
+
+.slider_inactive .right-label {
+	color: white;
+}
+
+
+.slider_active .left-label {
+	color: white;
+}
+
+.slider_active .right-label {
+	color: #f6851b;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+#buy_orders_title {
+	margin-bottom: -0.2rem;
+}
+
+#sell_orders_title {
+	margin-bottom: -0.2rem;
+}
+
+#buy_orders {
+	vertical-align: top;
+}
+
+#sell_orders {
+	vertical-align: top;
+}
+
+#buy_orders_list {
+	max-height: 18rem;
+	overflow:scroll;
+	overflow-x: hidden;
+}
+
+#sell_orders_list {
+	max-height: 18rem;
+	overflow:scroll;
+	overflow-x: hidden;
+}
+
+.placeholder {
+	margin: 3rem 5rem;
+}

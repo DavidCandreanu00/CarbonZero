@@ -1,0 +1,86 @@
+/* Some of the CSS for the Nav Bar was adapted from here:
+    https://codepen.io/ItsMeNatalie/pen/ZEzWQXK
+*/
+
+.logoWrapper {
+    display: flex;
+}
+
+.navi_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2f3141;
+
+    color: white;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 20px 40px 20px 40px;
+}
+
+.navbar_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navi {
+    display: flex;
+    list-style-type: none;
+}
+
+#logo_first_word {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#logo_second_word {
+    padding-left: 5px;
+    color: #f6851b;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.link {
+    position: relative;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    padding: 0 1.5rem;
+    font-weight: bold;
+}
+
+.link :link {
+    text-decoration: none;
+  }
+  
+.link :hover {
+    color: #f6851b;
+    transition: 0.3s; 
+}
+
+.link_text {
+    color: white;
+}
+
+.logout_button {
+    border-radius: 13px; 
+    border: 1px solid #f6851b; 
+    background-color: #f6851b; 
+    color: white; 
+    cursor: pointer; 
+    font-weight: bold;
+    transition: 0.3s; 
+    font-size: 17px; 
+    padding: 10px 30px; 
+}
+ 
+.logout_button:hover { 
+    border-color: #1f1d2a; 
+    transition: 0.3s; 
+    background-color: white; 
+    color: #1f1d2a; 
+}

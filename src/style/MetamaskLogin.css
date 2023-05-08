@@ -1,0 +1,43 @@
+.login_button {
+    background-color: #f6851b; 
+    border-radius: 13px; 
+    border: 1px solid #f6851b; 
+    color: white; 
+    font-size: 22px; 
+    padding: 15px 35px; 
+    cursor: pointer; 
+    font-weight: bold;
+    transition: 0.3s; 
+    margin-top: 1rem;
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.25);
+}
+ 
+.login_button:hover { 
+    background-color: white; 
+    color: #1f1d2a; 
+    border-color: #1f1d2a; 
+    transition: 0.3s; 
+}
+
+#metamask_icon {
+    max-width: 20%;
+    height: auto;
+}
+
+.header_login {
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-shadow: 3px 2px 3px #1f1d2a;
+  }
+
+.login_container {
+    margin: auto;
+    margin-top:10%;
+    width: 60%;
+    text-align: center;
+    background-color: #262835;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    border-radius: 13px; 
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.25);
+}
