@@ -4,6 +4,8 @@ Web3 platform that enables companies to be assigned Carbon Emission Rights and t
 
 The goal of this project was to create a complete platform that enables governments to assign allowances and oversee trading, and empowers companies to trade and manage their emissions allowance portfolio. A complex system was developed that encompasses trading and token assignment functionality on EVM blockchains, a functional web app and a server that maintains an off-chain order book in a database. 
 
+You can also read the project's documentation here: [Project paper](https://github.com/DavidCandreanu00/CarbonZero/blob/main/Final%20Year%20Project%20David%20Candreanu.pdf)
+
 In order to easily run the project’s code, a VM was created. All used tools (Ganache, MetaMask) and dependencies have already been installed.
 
 
