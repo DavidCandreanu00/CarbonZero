@@ -14,6 +14,6 @@ https://www.virtualbox.org/wiki/Downloads
 
 The VM was developed and tested on Virtual Box 7. Older versions were not tested, please use version 7.
 
-### <u> Download the VM: </u>
+### Download the VM:
 
-To create the VM, you will need to download the ‘VM FYP DC.ova’ file from the following location: [https://bham-my.sharepoint.com/personal/dxc936_student_bham_ac_uk/_layouts/15/ guestaccess.aspx?guestaccesstoken=H5dttWWSK0uteEiUhzCn75xWdM%2BFjPg9ZuNUVBlhaak%3D&docid=2_1c30333237d184769a555cab537bc7e92&rev=1&e=tWi5z2](VM).
+To create the VM, you will need to download the ‘VM FYP DC.ova’ file from the following location: [VM](https://bham-my.sharepoint.com/personal/dxc936_student_bham_ac_uk/_layouts/15/ guestaccess.aspx?guestaccesstoken=H5dttWWSK0uteEiUhzCn75xWdM%2BFjPg9ZuNUVBlhaak%3D&docid=2_1c30333237d184769a555cab537bc7e92&rev=1&e=tWi5z2).
