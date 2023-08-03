@@ -52,7 +52,7 @@ The following steps need to be followed in the correct order to successfully run
 - select ‘Run’
   
 Once Ganache is open:
--select ‘carbon-zero-chain’ by pressing on it:
+- select ‘carbon-zero-chain’
 The Ganache Blockchain is now running and the window can be minimised.
 
 
@@ -60,8 +60,10 @@ The Ganache Blockchain is now running and the window can be minimised.
 
 The next step is to go to the folder containing the Node server and to run it.
 Instructions:
--open a new Terminal instance
--run: ‘cd Desktop/carbon_zero/src/node_server/‘ -run: ‘node node_oracle.js’
+
+- open a new Terminal instance
+- run: ‘cd Desktop/carbon_zero/src/node_server/‘
+- run: ‘node node_oracle.js’
 
 The server should now be running in the background. This Terminal instance should stay open for the duration of running the web app.
 
@@ -69,7 +71,9 @@ The server should now be running in the background. This Terminal instance shoul
 ### Step 3. Start the Web App
 
 Instructions:
--open a new Terminal instance -run: ‘cd Desktop/carbon_zero’ -run: ‘npm start’
+- open a new Terminal instance
+- run: ‘cd Desktop/carbon_zero'
+- run: ‘npm start’
 
 The web app should now be opened in a Mozilla Firefox window. It can also be accessed at:
-localhost:3000
+*localhost:3000*
