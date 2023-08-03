@@ -38,3 +38,38 @@ Password: password
 Password: password
 Recovery phrase:
 senior voice sting tone donkey believe like moon remind used bike daughter
+
+
+## How to run the project:
+
+The following steps need to be followed in the correct order to successfully run the project. The VM will also need to be connected to the internet (connection should be automatic if the host computer has internet access).
+
+
+### Step 1. Start the Ganache blockchain
+
+- go to Desktop
+- Right Click on ‘ganache-2.7.1-linux...’
+- select ‘Run’
+  
+Once Ganache is open:
+-select ‘carbon-zero-chain’ by pressing on it:
+The Ganache Blockchain is now running and the window can be minimised.
+
+
+### Step 2. Start the Oracle Server
+
+The next step is to go to the folder containing the Node server and to run it.
+Instructions:
+-open a new Terminal instance
+-run: ‘cd Desktop/carbon_zero/src/node_server/‘ -run: ‘node node_oracle.js’
+
+The server should now be running in the background. This Terminal instance should stay open for the duration of running the web app.
+
+
+### Step 3. Start the Web App
+
+Instructions:
+-open a new Terminal instance -run: ‘cd Desktop/carbon_zero’ -run: ‘npm start’
+
+The web app should now be opened in a Mozilla Firefox window. It can also be accessed at:
+localhost:3000
