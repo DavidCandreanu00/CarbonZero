@@ -2,6 +2,10 @@
 pragma solidity ^0.8.17;
 import "./SignUpContract.sol";
 
+/// @title Trading Platform Contract
+/// @author David Candreanu
+/// @notice Users can buy and sell CO2 tokens, and the admin can mint and assign tokens.
+/// @dev The contract inherits functionality from the SignUpContract.
 contract TradingPlatform is SignUpContract{
     mapping (address => uint64) private allowance;
     mapping (address => bytes32) private sell_orders;
