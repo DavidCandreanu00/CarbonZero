@@ -43,7 +43,10 @@ contract TradingPlatform is SignUpContract{
         return allowance[_address];
     }
 
-
+    /// @title Mint function
+    /// @author David Candreanu
+    /// @notice The owner can mint tokens, and assign trading volume to all users.
+    /// @dev Only the owner can call this function. It will emit a minted event.
     function mint (address[] memory _pending_addresses, uint8 _trading_period_length, uint8 _target_reduction) external only_owner {
         uint64 total = 0;
         uint64 company_allowance = 0;
@@ -63,7 +66,10 @@ contract TradingPlatform is SignUpContract{
         emit minted(_trading_period_length, _target_reduction, block.timestamp);
     }
 
-
+    /// @title Create sell order function
+    /// @author David Candreanu
+    /// @notice A user can create a sell order.
+    /// @dev The user will only create an order if it doesn't already have an open one.
     function create_sell_order (uint64 _amount, uint256 _price) external is_approved {
         require(trading_open, "E4");
         require(allowance[msg.sender] >= _amount, "E5");
@@ -72,14 +78,18 @@ contract TradingPlatform is SignUpContract{
         emit sell_order_event(msg.sender, _amount, _price);
     }
 
-
+    /// @title Delete sell order function
+    /// @author David Candreanu
+    /// @notice A user can delete their sell order.
     function delete_sell_order () external {
         require(sell_orders[msg.sender] != 0);
         sell_orders[msg.sender] = 0;
         emit sell_order_event(msg.sender, 0, 0);
     }
 
-
+    /// @title Buy function
+    /// @author David Candreanu
+    /// @notice A user can buy tokens from an address with an open sell order.
     function buy (address payable _seller, uint64 _amount, uint64 _on_sale, uint256 _price) external payable is_approved {
         require(trading_open, "E4");
         require(keccak256(abi.encodePacked(_on_sale, _price)) == sell_orders[_seller], "E7");
@@ -104,7 +114,10 @@ contract TradingPlatform is SignUpContract{
         require(sent, "E10");
     }
 
-
+    /// @title Create buy order function
+    /// @author David Candreanu
+    /// @notice A user can create a buy order.
+    /// @dev The user will only create an order if it doesn't already have an open one.
     function create_buy_order (uint64 _amount, uint256 _price) external payable is_approved {
         require(trading_open, "E4");
         require(msg.value >= (_amount * _price), "E11");
@@ -115,7 +128,9 @@ contract TradingPlatform is SignUpContract{
         emit buy_order_event(msg.sender, _amount, _price);
     }
 
-
+    /// @title Delete buy order function
+    /// @author David Candreanu
+    /// @notice A user can delete their buy order.
     function delete_buy_order (uint64 _amount, uint256 _price) external {
         require(keccak256(abi.encodePacked(_amount, _price)) == buy_orders[msg.sender], "E13");
 
@@ -128,7 +143,9 @@ contract TradingPlatform is SignUpContract{
         require(sent, "E10");
     }
 
-
+    /// @title Sell function
+    /// @author David Candreanu
+    /// @notice A user can sell tokens to an address with an open buy order.
     function sell (address _buyer, uint64 _amount, uint64 _on_request, uint256 _price) external is_approved {
         require(trading_open, "E4");
         require(keccak256(abi.encodePacked(_on_request, _price)) == buy_orders[_buyer], "E14");
@@ -160,7 +177,9 @@ contract TradingPlatform is SignUpContract{
         return address(this).balance;
     }
 
-
+    /// @title Withdraw tokens function
+    /// @author David Candreanu
+    /// @notice The owner can withdraw the contract's funds, once trading is closed.
     function withdraw_eth_after_trading_close () external only_owner {
         require(trading_open == false, "E17");
         address payable to = payable(msg.sender);
