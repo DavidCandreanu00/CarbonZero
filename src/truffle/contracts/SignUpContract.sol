@@ -2,8 +2,10 @@
 pragma solidity ^0.8.17;
 import "./Ownable.sol";
 
-// Made the contract abstract.
-
+/// @title The contract that contains sign up functionality for the platform
+/// @author David Candreanu
+/// @notice Any user can use this contract to join the platform, and the Owner can use it to grant permission rights.
+/// @dev The status of an address represents its access level.
 abstract contract SignUpContract is Ownable{
     mapping (address => string) private address_account_cid;
     mapping (address => uint8) private address_account_status;
